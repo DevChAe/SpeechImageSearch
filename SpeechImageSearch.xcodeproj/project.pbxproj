@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E7B5C5DB34E1645E20176B3 /* Pods_SpeechImageSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B8F66A6C40A9BCF8575D8C /* Pods_SpeechImageSearchUITests.framework */; };
+		71460A69B03106A021D1CA1F /* Pods_SpeechImageSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF0B99A72CB6CB99817051D /* Pods_SpeechImageSearchTests.framework */; };
+		7AECEA59E77E0DC31E70FEAB /* Pods_SpeechImageSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEF3D0BAC70D44252091955 /* Pods_SpeechImageSearch.framework */; };
 		E0F877C521B4D94700AAE632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F877C421B4D94700AAE632 /* AppDelegate.swift */; };
-		E0F877C721B4D94700AAE632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F877C621B4D94700AAE632 /* ViewController.swift */; };
+		E0F877C721B4D94700AAE632 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F877C621B4D94700AAE632 /* SpeechViewController.swift */; };
 		E0F877CA21B4D94700AAE632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F877C821B4D94700AAE632 /* Main.storyboard */; };
 		E0F877CC21B4D94900AAE632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F877CB21B4D94900AAE632 /* Assets.xcassets */; };
 		E0F877CF21B4D94900AAE632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F877CD21B4D94900AAE632 /* LaunchScreen.storyboard */; };
 		E0F877DA21B4D94900AAE632 /* SpeechImageSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F877D921B4D94900AAE632 /* SpeechImageSearchTests.swift */; };
 		E0F877E521B4D94900AAE632 /* SpeechImageSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F877E421B4D94900AAE632 /* SpeechImageSearchUITests.swift */; };
+		E0F877F321B4DD4200AAE632 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E0F877F221B4DD4200AAE632 /* .gitignore */; };
+		E0F877F521B4DEC300AAE632 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F877F421B4DEC300AAE632 /* AudioToolbox.framework */; };
+		E0F877FA21B4DF5300AAE632 /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F877F921B4DF5300AAE632 /* KakaoCommon.framework */; };
+		E0F877FC21B4DF5C00AAE632 /* KakaoNewtoneSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F877FB21B4DF5C00AAE632 /* KakaoNewtoneSpeech.framework */; };
+		E0F877FF21B4DF7600AAE632 /* SpeechEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F877FE21B4DF7600AAE632 /* SpeechEffectView.swift */; };
+		E0F8780121B4E0E700AAE632 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F8780021B4E0E700AAE632 /* libc++.tbd */; };
+		E0F8780321B4E0F600AAE632 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F8780221B4E0F600AAE632 /* libiconv.tbd */; };
+		E0F8780621B4EC1D00AAE632 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8780521B4EC1D00AAE632 /* NetworkManager.swift */; };
+		E0F8780921B4EC3000AAE632 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8780821B4EC3000AAE632 /* DataModel.swift */; };
+		E0F8780F21B4EC8E00AAE632 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8780D21B4EC8D00AAE632 /* DescriptionTableViewCell.swift */; };
+		E0F8781021B4EC8E00AAE632 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8780E21B4EC8E00AAE632 /* ImageTableViewCell.swift */; };
+		E0F8781221B4EC9900AAE632 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8781121B4EC9900AAE632 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AF0B99A72CB6CB99817051D /* Pods_SpeechImageSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechImageSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B8F66A6C40A9BCF8575D8C /* Pods_SpeechImageSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechImageSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69407A94EAA5A26059E61CD8 /* Pods-SpeechImageSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechImageSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechImageSearchUITests/Pods-SpeechImageSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DF4B9DCE3D96C04720ABB2A /* Pods-SpeechImageSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechImageSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechImageSearchTests/Pods-SpeechImageSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		944646E465EFDBABB6DDFEBC /* Pods-SpeechImageSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechImageSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechImageSearch/Pods-SpeechImageSearch.release.xcconfig"; sourceTree = "<group>"; };
+		94B63E20D3DE8AB5DE27B20C /* Pods-SpeechImageSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechImageSearchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechImageSearchUITests/Pods-SpeechImageSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CFA86D03E8F3FBF97377A542 /* Pods-SpeechImageSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechImageSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechImageSearch/Pods-SpeechImageSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		DFE2E00BC8B112ED5B6A9B57 /* Pods-SpeechImageSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechImageSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechImageSearchTests/Pods-SpeechImageSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0F877C121B4D94700AAE632 /* SpeechImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F877C421B4D94700AAE632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0F877C621B4D94700AAE632 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0F877C621B4D94700AAE632 /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 		E0F877C921B4D94700AAE632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0F877CB21B4D94900AAE632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0F877CE21B4D94900AAE632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +70,19 @@
 		E0F877E021B4D94900AAE632 /* SpeechImageSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechImageSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F877E421B4D94900AAE632 /* SpeechImageSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechImageSearchUITests.swift; sourceTree = "<group>"; };
 		E0F877E621B4D94900AAE632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F877F221B4DD4200AAE632 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E0F877F421B4DEC300AAE632 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E0F877F921B4DF5300AAE632 /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
+		E0F877FB21B4DF5C00AAE632 /* KakaoNewtoneSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoNewtoneSpeech.framework; sourceTree = "<group>"; };
+		E0F877FE21B4DF7600AAE632 /* SpeechEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechEffectView.swift; sourceTree = "<group>"; };
+		E0F8780021B4E0E700AAE632 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E0F8780221B4E0F600AAE632 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		E0F8780521B4EC1D00AAE632 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E0F8780821B4EC3000AAE632 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		E0F8780D21B4EC8D00AAE632 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		E0F8780E21B4EC8E00AAE632 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		E0F8781121B4EC9900AAE632 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FBEF3D0BAC70D44252091955 /* Pods_SpeechImageSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechImageSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F8780321B4E0F600AAE632 /* libiconv.tbd in Frameworks */,
+				E0F8780121B4E0E700AAE632 /* libc++.tbd in Frameworks */,
+				E0F877F521B4DEC300AAE632 /* AudioToolbox.framework in Frameworks */,
+				E0F877FA21B4DF5300AAE632 /* KakaoCommon.framework in Frameworks */,
+				7AECEA59E77E0DC31E70FEAB /* Pods_SpeechImageSearch.framework in Frameworks */,
+				E0F877FC21B4DF5C00AAE632 /* KakaoNewtoneSpeech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71460A69B03106A021D1CA1F /* Pods_SpeechImageSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +111,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7B5C5DB34E1645E20176B3 /* Pods_SpeechImageSearchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D695065DC0D9B139E7D0F8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFA86D03E8F3FBF97377A542 /* Pods-SpeechImageSearch.debug.xcconfig */,
+				944646E465EFDBABB6DDFEBC /* Pods-SpeechImageSearch.release.xcconfig */,
+				7DF4B9DCE3D96C04720ABB2A /* Pods-SpeechImageSearchTests.debug.xcconfig */,
+				DFE2E00BC8B112ED5B6A9B57 /* Pods-SpeechImageSearchTests.release.xcconfig */,
+				69407A94EAA5A26059E61CD8 /* Pods-SpeechImageSearchUITests.debug.xcconfig */,
+				94B63E20D3DE8AB5DE27B20C /* Pods-SpeechImageSearchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE2937E014F6551B52273EE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0F8780221B4E0F600AAE632 /* libiconv.tbd */,
+				E0F8780021B4E0E700AAE632 /* libc++.tbd */,
+				E0F877F421B4DEC300AAE632 /* AudioToolbox.framework */,
+				FBEF3D0BAC70D44252091955 /* Pods_SpeechImageSearch.framework */,
+				5AF0B99A72CB6CB99817051D /* Pods_SpeechImageSearchTests.framework */,
+				66B8F66A6C40A9BCF8575D8C /* Pods_SpeechImageSearchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0F877B821B4D94700AAE632 = {
 			isa = PBXGroup;
 			children = (
+				E0F877F221B4DD4200AAE632 /* .gitignore */,
 				E0F877C321B4D94700AAE632 /* SpeechImageSearch */,
 				E0F877D821B4D94900AAE632 /* SpeechImageSearchTests */,
 				E0F877E321B4D94900AAE632 /* SpeechImageSearchUITests */,
 				E0F877C221B4D94700AAE632 /* Products */,
+				7D695065DC0D9B139E7D0F8E /* Pods */,
+				AE2937E014F6551B52273EE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +170,13 @@
 		E0F877C321B4D94700AAE632 /* SpeechImageSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E0F8780A21B4EC3D00AAE632 /* Controller */,
+				E0F8780721B4EC2500AAE632 /* Model */,
+				E0F8780421B4EA1800AAE632 /* Manager */,
+				E0F877FD21B4DF6800AAE632 /* SpeechEffectView */,
+				E0F877F621B4DF2800AAE632 /* Library */,
 				E0F877C421B4D94700AAE632 /* AppDelegate.swift */,
-				E0F877C621B4D94700AAE632 /* ViewController.swift */,
+				E0F877C621B4D94700AAE632 /* SpeechViewController.swift */,
 				E0F877C821B4D94700AAE632 /* Main.storyboard */,
 				E0F877CB21B4D94900AAE632 /* Assets.xcassets */,
 				E0F877CD21B4D94900AAE632 /* LaunchScreen.storyboard */,
@@ -125,6 +203,81 @@
 			path = SpeechImageSearchUITests;
 			sourceTree = "<group>";
 		};
+		E0F877F621B4DF2800AAE632 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E0F877F721B4DF3D00AAE632 /* Kakao */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		E0F877F721B4DF3D00AAE632 /* Kakao */ = {
+			isa = PBXGroup;
+			children = (
+				E0F877F921B4DF5300AAE632 /* KakaoCommon.framework */,
+				E0F877F821B4DF4600AAE632 /* KakaoNewtoneSpeech */,
+			);
+			path = Kakao;
+			sourceTree = "<group>";
+		};
+		E0F877F821B4DF4600AAE632 /* KakaoNewtoneSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				E0F877FB21B4DF5C00AAE632 /* KakaoNewtoneSpeech.framework */,
+			);
+			path = KakaoNewtoneSpeech;
+			sourceTree = "<group>";
+		};
+		E0F877FD21B4DF6800AAE632 /* SpeechEffectView */ = {
+			isa = PBXGroup;
+			children = (
+				E0F877FE21B4DF7600AAE632 /* SpeechEffectView.swift */,
+			);
+			path = SpeechEffectView;
+			sourceTree = "<group>";
+		};
+		E0F8780421B4EA1800AAE632 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E0F8780521B4EC1D00AAE632 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E0F8780721B4EC2500AAE632 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0F8780821B4EC3000AAE632 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0F8780A21B4EC3D00AAE632 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0F8780B21B4EC5200AAE632 /* Result */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0F8780B21B4EC5200AAE632 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E0F8781121B4EC9900AAE632 /* ResultViewController.swift */,
+				E0F8780C21B4EC5900AAE632 /* Cell */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		E0F8780C21B4EC5900AAE632 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0F8780D21B4EC8D00AAE632 /* DescriptionTableViewCell.swift */,
+				E0F8780E21B4EC8E00AAE632 /* ImageTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F877E921B4D94900AAE632 /* Build configuration list for PBXNativeTarget "SpeechImageSearch" */;
 			buildPhases = (
+				8D6EC50DFE3DB978F3FD49B6 /* [CP] Check Pods Manifest.lock */,
 				E0F877BD21B4D94700AAE632 /* Sources */,
 				E0F877BE21B4D94700AAE632 /* Frameworks */,
 				E0F877BF21B4D94700AAE632 /* Resources */,
+				94901C670E66B0E5D87CE6F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F877EC21B4D94900AAE632 /* Build configuration list for PBXNativeTarget "SpeechImageSearchTests" */;
 			buildPhases = (
+				BE51AA45F99ABC878FC03FEE /* [CP] Check Pods Manifest.lock */,
 				E0F877D121B4D94900AAE632 /* Sources */,
 				E0F877D221B4D94900AAE632 /* Frameworks */,
 				E0F877D321B4D94900AAE632 /* Resources */,
@@ -167,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0F877EF21B4D94900AAE632 /* Build configuration list for PBXNativeTarget "SpeechImageSearchUITests" */;
 			buildPhases = (
+				60CAD502E7A99B90E14BB34D /* [CP] Check Pods Manifest.lock */,
 				E0F877DC21B4D94900AAE632 /* Sources */,
 				E0F877DD21B4D94900AAE632 /* Frameworks */,
 				E0F877DE21B4D94900AAE632 /* Resources */,
@@ -229,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F877F321B4DD4200AAE632 /* .gitignore in Resources */,
 				E0F877CF21B4D94900AAE632 /* LaunchScreen.storyboard in Resources */,
 				E0F877CC21B4D94900AAE632 /* Assets.xcassets in Resources */,
 				E0F877CA21B4D94700AAE632 /* Main.storyboard in Resources */,
@@ -251,12 +409,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60CAD502E7A99B90E14BB34D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechImageSearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D6EC50DFE3DB978F3FD49B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechImageSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94901C670E66B0E5D87CE6F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeechImageSearch/Pods-SpeechImageSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyAttributes/SwiftyAttributes.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyAttributes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeechImageSearch/Pods-SpeechImageSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE51AA45F99ABC878FC03FEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeechImageSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0F877BD21B4D94700AAE632 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0F877C721B4D94700AAE632 /* ViewController.swift in Sources */,
+				E0F8781021B4EC8E00AAE632 /* ImageTableViewCell.swift in Sources */,
+				E0F8780921B4EC3000AAE632 /* DataModel.swift in Sources */,
+				E0F8780621B4EC1D00AAE632 /* NetworkManager.swift in Sources */,
+				E0F8781221B4EC9900AAE632 /* ResultViewController.swift in Sources */,
+				E0F877FF21B4DF7600AAE632 /* SpeechEffectView.swift in Sources */,
+				E0F877C721B4D94700AAE632 /* SpeechViewController.swift in Sources */,
+				E0F8780F21B4EC8E00AAE632 /* DescriptionTableViewCell.swift in Sources */,
 				E0F877C521B4D94700AAE632 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +661,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,42 +673,55 @@
 		};
 		E0F877EA21B4D94900AAE632 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA86D03E8F3FBF97377A542 /* Pods-SpeechImageSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DW32JEYCX2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpeechImageSearch/Library/Kakao",
+					"$(PROJECT_DIR)/SpeechImageSearch/Library/Kakao/KakaoNewtoneSpeech",
+				);
 				INFOPLIST_FILE = SpeechImageSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danawa.SpeechImageSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChAe.SpeechImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E0F877EB21B4D94900AAE632 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944646E465EFDBABB6DDFEBC /* Pods-SpeechImageSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DW32JEYCX2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpeechImageSearch/Library/Kakao",
+					"$(PROJECT_DIR)/SpeechImageSearch/Library/Kakao/KakaoNewtoneSpeech",
+				);
 				INFOPLIST_FILE = SpeechImageSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danawa.SpeechImageSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChAe.SpeechImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		E0F877ED21B4D94900AAE632 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF4B9DCE3D96C04720ABB2A /* Pods-SpeechImageSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +743,7 @@
 		};
 		E0F877EE21B4D94900AAE632 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE2E00BC8B112ED5B6A9B57 /* Pods-SpeechImageSearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +765,7 @@
 		};
 		E0F877F021B4D94900AAE632 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69407A94EAA5A26059E61CD8 /* Pods-SpeechImageSearchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +786,7 @@
 		};
 		E0F877F121B4D94900AAE632 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B63E20D3DE8AB5DE27B20C /* Pods-SpeechImageSearchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
