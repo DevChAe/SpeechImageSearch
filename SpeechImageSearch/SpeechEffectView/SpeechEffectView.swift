@@ -22,7 +22,7 @@ class SpeechEffectView: UIView {
     private let speechButton: UIButton = UIButton()
     private var progressLayer: CAShapeLayer?
     
-    @IBInspectable var idleBackgroundColor: UIColor = #colorLiteral(red: 0.8894147277, green: 0.8894355893, blue: 0.889424324, alpha: 1) {  // 기본 상태 버튼 백그라운드 컬러
+    @IBInspectable var idleBackgroundColor: UIColor = #colorLiteral(red: 0.8894147277, green: 0.8894355893, blue: 0.889424324, alpha: 1) {      // 기본 상태 버튼 배경 색상
         didSet {
             if self.speechButton.isSelected == false {
                 self.speechButton.setBackgroundImage(idleBackgroundColor.image(), for: .normal)
@@ -30,7 +30,7 @@ class SpeechEffectView: UIView {
         }
     }
     
-    @IBInspectable var speechBackgroundColor: UIColor = #colorLiteral(red: 0.1215686275, green: 0.4078431373, blue: 0.937254902, alpha: 1) { // 말하는 상태 (녹음중) 버튼 백그라운드 컬러
+    @IBInspectable var speechBackgroundColor: UIColor = #colorLiteral(red: 0.1215686275, green: 0.4078431373, blue: 0.937254902, alpha: 1) {    // 말하는 상태 (녹음중) 버튼 배경색상
         didSet {
             if self.speechButton.isSelected == true {
                 self.speechButton.setBackgroundImage(speechBackgroundColor.image(), for: .normal)
@@ -38,14 +38,14 @@ class SpeechEffectView: UIView {
         }
     }
     
-    @IBInspectable var idleImage: UIImage? = UIImage(named: "ic_voice") {   // 기본 상태 버튼 백그라운드 컬러
+    @IBInspectable var idleImage: UIImage? = UIImage(named: "ic_voice") {       // 기본 상태 버튼 이미지
         didSet {
             if self.speechButton.isSelected == false {
                 self.speechButton.setImage(idleImage, for: .normal)
             }
         }
     }
-    @IBInspectable var speechImage: UIImage? = UIImage(named: "ic_voice_on") { // 말하는 상태 (녹음중) 버튼 백그라운드 컬러
+    @IBInspectable var speechImage: UIImage? = UIImage(named: "ic_voice_on") {  // 말하는 상태 (녹음중) 버튼 이미지
         didSet {
             if self.speechButton.isSelected == true {
                 self.speechButton.setImage(speechImage, for: .normal)
@@ -53,31 +53,33 @@ class SpeechEffectView: UIView {
         }
     }
     
-    @IBInspectable var level1Color: UIColor = #colorLiteral(red: 0.5725490196, green: 0.7725490196, blue: 0.9725490196, alpha: 1) { // 녹음 레벨 컬러 1
+    @IBInspectable var level1Color: UIColor = #colorLiteral(red: 0.5725490196, green: 0.7725490196, blue: 0.9725490196, alpha: 1) {     // 녹음 레벨1 색상
         didSet {
             self.level1Layer.fillColor = level1Color.cgColor
         }
     }
     
-    @IBInspectable var level2Color: UIColor = #colorLiteral(red: 0.7843137255, green: 0.8823529412, blue: 0.9921568627, alpha: 1) {  // 녹음 레벨 컬러 2
+    @IBInspectable var level2Color: UIColor = #colorLiteral(red: 0.7843137255, green: 0.8823529412, blue: 0.9921568627, alpha: 1) {     // 녹음 레벨2 색상
         didSet {
             self.level2Layer.fillColor = level2Color.cgColor
         }
     }
     
-    @IBInspectable var level3Color: UIColor = #colorLiteral(red: 0.8980392157, green: 0.9450980392, blue: 0.9960784314, alpha: 1) {  // 녹음 레벨 컬러 3
+    @IBInspectable var level3Color: UIColor = #colorLiteral(red: 0.8980392157, green: 0.9450980392, blue: 0.9960784314, alpha: 1) {     // 녹음 레벨3 색상
         didSet {
             self.level3Layer.fillColor = level3Color.cgColor
         }
     }
     
-    @IBInspectable var isProgress: Bool = false {   // 프로그래스 표시 유무
+    @IBInspectable var findEffectColor: UIColor = #colorLiteral(red: 0.1215686275, green: 0.4078431373, blue: 0.937254902, alpha: 1)    // 검색 효과 색상
+    
+    @IBInspectable var isProgress: Bool = false {       // 프로그래스 표시 유무
         didSet {
             configProgress()
         }
     }
     
-    @IBInspectable var progressColor: UIColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1) { // 프로그래스 컬러
+    @IBInspectable var progressColor: UIColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1) {     // 프로그래스 색상
         didSet {
             progressLayer?.strokeColor = progressColor.cgColor
         }
@@ -89,23 +91,23 @@ class SpeechEffectView: UIView {
         }
     }
     
-    @IBInspectable var progressDuration: Double = 5   // 프로그래스 동작 시간
+    @IBInspectable var progressDuration: Double = 5     // 프로그래스 동작 시간
     
-    private static let buttonSizePercent: CGFloat = 0.25 // 버튼 사이즈 (퍼센트)
-    private static let level3FixPercent: CGFloat = 0.73 // 말하기 3레벨 고정 사이즈 (퍼센트)
-    private var level1DefaultPercent: CGFloat = {       // 말하기 1레벨 기존 사이즈 (퍼센트)
+    private static let buttonSizePercent: CGFloat = 0.25    // 버튼 사이즈 (퍼센트)
+    private static let level3FixPercent: CGFloat = 0.73     // 말하기 3레벨 고정 사이즈 (퍼센트)
+    private var level1DefaultPercent: CGFloat = {           // 말하기 1레벨 기존 사이즈 (퍼센트)
         return (SpeechEffectView.level3FixPercent - SpeechEffectView.buttonSizePercent) / 3.0 + SpeechEffectView.buttonSizePercent
     }()
-    private var level2FixPercent: CGFloat = {           // 말하기 2레벨 고정 사이즈 (퍼센트)
+    private var level2FixPercent: CGFloat = {               // 말하기 2레벨 고정 사이즈 (퍼센트)
         return ((SpeechEffectView.level3FixPercent - SpeechEffectView.buttonSizePercent) / 3.0) * 2.0 + SpeechEffectView.buttonSizePercent
     }()
     
-    private var isLevel2Fixed: Bool = false             // 말하기 레벨2 고정 유무
-    private var isLevel3Fixed: Bool = false             // 말하기 레벨3 고정 유무
+    private var isLevel2Fixed: Bool = false                 // 말하기 레벨2 고정 유무
+    private var isLevel3Fixed: Bool = false                 // 말하기 레벨3 고정 유무
     
-    private var viewMinSize: CGFloat = 0                // 현재 뷰 가로/세로 최소 사이즈 (사이즈 변경 감지용)
+    private var viewMinSize: CGFloat = 0                    // 현재 뷰 가로/세로 최소 사이즈 (사이즈 변경 감지용)
     
-    private var progressWorkItem: DispatchWorkItem?     // 프로그래스 완료후 동작 내용
+    private var progressWorkItem: DispatchWorkItem?         // 프로그래스 완료후 동작 내용
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -306,6 +308,10 @@ class SpeechEffectView: UIView {
     
     // 말하기 레벨 설정
     func setSpeechLevel(_ level: Float) {
+        guard level >= 0 && level <= 1.0 else {
+            return
+        }
+        
         let adjustScale: CGFloat = max(CGFloat(level) * ((SpeechEffectView.level3FixPercent + 0.02) - (level1DefaultPercent + SpeechEffectView.buttonSizePercent) / 2.0) + (level1DefaultPercent + SpeechEffectView.buttonSizePercent) / 2.0, level1DefaultPercent)
         if let _ = level1Layer.animation(forKey: "scale") {
             level1Layer.removeAllAnimations()
@@ -401,7 +407,7 @@ class SpeechEffectView: UIView {
         findLayer.path = path.cgPath
         findLayer.lineWidth = layerWidth
         findLayer.lineCap = CAShapeLayerLineCap.round
-        findLayer.strokeColor = #colorLiteral(red: 0.1215686275, green: 0.4078431373, blue: 0.937254902, alpha: 1).cgColor
+        findLayer.strokeColor = findEffectColor.cgColor
         replicatorLayer.addSublayer(findLayer)
         
         
@@ -485,10 +491,10 @@ extension SpeechEffectView {
         } else {
             // 미동작 (동작 요청)
             if delegate?.startSpeechEffect() == true {
+                setSpeechLevel(0)
                 speechButton.setBackgroundImage(speechBackgroundColor.image(), for: .normal)
                 speechButton.setImage(speechImage, for: .normal)
-                
-                
+
                 if isProgress == true {
                     strokeEndAnimate(layer: progressLayer,
                                      duration: progressDuration,
